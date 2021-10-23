@@ -11,8 +11,7 @@ body{
 }
 .genius {
      display: grid;
-     grid-template-areas: 'verde vermelho'
-     'amarelo azul';
+     grid-template-areas: 'verde vermelho''amarelo azul';
      grid-gap: 10px;
      border: 1px solid #ffffff;
      background-color: #ffffff;
@@ -42,4 +41,12 @@ body{
 }
 .selected{
      opacity: 0.6;
+}
+@media(max-width: 800px) {
+     .genius {
+          grid-gap: 5px;
+          width: 350px;
+          height: 350px;
+          border: 5px solid white;
+     }
 }
